@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: yxal
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xwkm-tenant/byoc-app-spqh/yxal@sha256:5f4d2bddf82e3ff9d3855c4fbb02e1d522389070d3b37990de6ebd9b4e404292
+        name: my-java-quarkus
+        resources: {}
+status: {}
